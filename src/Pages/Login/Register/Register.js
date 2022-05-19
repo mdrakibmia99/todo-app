@@ -127,7 +127,7 @@ const Register = () => {
                 <div className="flex justify-between items-center mb-3">
                     <div className="form-group form-check">
                         <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" className='form-check-input h-4 w-4  float-left mr-2 cursor-pointer' />
-                        <label htmlFor="terms" className={`${agree ? 'text-[black]' : 'text-[red]'}`}>Accept Terms and Conditions</label>
+                        <label htmlhtmlhtmlFor="terms" className={`${agree ? 'text-[black]' : 'text-[red]'}`}>Accept Terms and Conditions</label>
                     </div>
                 </div>
                 <button type="submit" disabled={!agree} className="

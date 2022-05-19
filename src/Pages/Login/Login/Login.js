@@ -77,7 +77,7 @@ const Login = () => {
               <div className="form-group form-check">
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms"
                 className='form-check-input h-4 w-4  float-left mr-2 cursor-pointer'/>
-                <label htmlFor="terms" className={`${agree? "text-black":"text-[red]"}`}>Remember me</label>
+                <label htmlhtmlhtmlFor="terms" className={`${agree? "text-black":"text-[red]"}`}>Remember me</label>
               </div>
               <Link to={'/reset'}
                 className="text-blue-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out">Forgot
