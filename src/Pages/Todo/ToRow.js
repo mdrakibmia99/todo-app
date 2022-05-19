@@ -17,8 +17,8 @@ const ToRow = (props) => {
     }
 
     return (
-        <div>
-            <tr className="hover">
+        <div >
+            <tr className="hover w-full'">
                 <td>
                     <label className={`${lineThrough && 'line-through'}`} ><b>{name}</b></label>
                 </td>
@@ -36,7 +36,7 @@ const ToRow = (props) => {
                 }
                 <td className={`${lineThrough && 'line-through'}`} title={`${desc}`}>{desc.slice(0, 110)}...</td>
 
-                <td>
+                <td className='grid grid-cols-2 justify-end'>
                     <label htmlFor="my-modal-4" className={`cursor-pointer ${lineThrough && 'line-through'}`} onClick={() => setLineThrough(!lineThrough)}>
                         <i className="fa fa-check-square-o cursor-pointer bg-green-500 text-white p-2 rounded-full" aria-hidden="true" onClick={() => setLineThrough(!lineThrough)} title='complete list'></i>
                     </label>
