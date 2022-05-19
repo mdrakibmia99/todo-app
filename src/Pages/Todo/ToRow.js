@@ -6,7 +6,7 @@ const ToRow = (props) => {
     const { name, desc, _id } = props.task;
     const [lineThrough, setLineThrough] = useState(false);
     const handleDeleteList = (id) => {
-        axios.delete(`http://localhost:5000/task/${id}`)
+        axios.delete(`https://damp-anchorage-23682.herokuapp.com/task/${id}`)
             .then(res => {
                 console.log(res);
                 toast('item deleted');

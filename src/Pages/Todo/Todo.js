@@ -7,7 +7,7 @@ const Todo = () => {
     const [tasks, setTasks] = useState([]);
     const [lineThrough, setLineThrough] = useState(false)
     useEffect(() => {
-        const url = `http://localhost:5000/task`;
+        const url = `https://damp-anchorage-23682.herokuapp.com/task`;
         const getLists = async () => {
             const request = await fetch(url);
             const response = await request.json();
@@ -23,7 +23,7 @@ const Todo = () => {
         const name = event.target.task_name.value;
         const task_desc = event.target.task_desc.value;
         const list = { name: name, desc: task_desc }
-        axios.post('http://localhost:5000/task', list)
+        axios.post('https://damp-anchorage-23682.herokuapp.com/task', list)
             .then(res => (res.data))
 
 
